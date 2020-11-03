@@ -12,6 +12,15 @@ $(document).ready(function(){
 
 
   /********************FUNZIONI**********************************/
+  //funzione per cambiare immagini con frecce sx e dx (37 e 39)
+  /*$(document).keydown(function(change){
+    if (change.keycode === 39) {
+      nextImg();
+    } else if (change.keycode === 37) {
+      prevImg();
+    };
+  });*/
+
   //funzione per l'avanti
   function nextImg() {
     //mi creo una variabile dove mi salvo la selezione di img che ha classe active
@@ -41,8 +50,25 @@ $(document).ready(function(){
     } else {//altrimenti
       //fai diventare attiva l'immagine precente
       imgAttiva.prev("img").addClass("active");
-    }
-  }
+    };
+  };
 
+  //funzione per cambiare immagini con frecce sx e dx (37 e 39)
+  $(document).keydown(function(change){
+    if (change.keyCode === 37) {
+      prevImg();
+    } else if (change.keyCode === 39) {
+      nextImg();
+    };
+  });
+
+  //funzione per cambiare immagini con frecce sopra e sotto (38 e 40)
+  $(document).keydown(function(change){
+    if (change.keyCode === 38) {
+      prevImg();
+    } else if (change.keyCode === 40) {
+      nextImg();
+    };
+  });
 
 });
