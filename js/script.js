@@ -12,14 +12,6 @@ $(document).ready(function(){
 
 
   /********************FUNZIONI**********************************/
-  //funzione per cambiare immagini con frecce sx e dx (37 e 39)
-  /*$(document).keydown(function(change){
-    if (change.keycode === 39) {
-      nextImg();
-    } else if (change.keycode === 37) {
-      prevImg();
-    };
-  });*/
 
   //funzione per l'avanti
   function nextImg() {
